@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartWonders | The One Stop Shop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/home.css">
+</head>
+
+<body>
+
+    <!-- The Header Section Starts here -->
+    <header>
+        <a href="./index.html" class="logo">
+            <img src="./Images/logo.png" alt="The Website Logo">
+        </a>
+        <nav>
+            <a href="./index.html" class="active">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- The Header section ends -->
+
+    <!-- The main carousel section starts -->
+
+    <section id="carousel">
+        <button class="slider-arrow prev" onclick="prevVideo()">&#8249;</button>
+            <video autoplay muted loop id="video-slider">
+                <source src="./Videos/video-1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="slider-arrow next" onclick="nextVideo()">&#8250;</button>
+    </section>
+    
+    <!-- The main carousel section ends -->
+
+
+    <section id="catergory-sec">
+        <div class="left-panel">
+            <img src="./Images/banner-3.webp" alt="The products banner">
+        </div>
+        <div class="right-panel">
+            <h3>The most trusted mart in the world</h3>
+            <div class="catergories">
+                <div class="catergory">
+                    <img src="./Images/typ-1.png" alt="Vegetable Image">
+                    <h4>Fresh Vegetables</h4>
+                    <h5>16 products</h5>
+                </div>
+                <div class="catergory">
+                    <img src="./Images/typ-2.png" alt="Fuits Image">
+                    <h4>Fresh Frutis</h4>
+                    <h5>20 products</h5>
+                </div>
+                <div class="catergory">
+                    <img src="./Images/typ-3.png" alt="Diary Image">
+                    <h4>Diary</h4>
+                    <h5>25 products</h5>
+                </div>
+                <div class="catergory">
+                    <img src="./Images/typ-4.png" alt="Sea and Fish">
+                    <h4>Sea & Fish</h4>
+                    <h5>30 products</h5>
+                </div>
+                <div class="catergory">
+                    <img src="./Images/typ-5.png" alt="Fresh Meat">
+                    <h4>Fresh Meat</h4>
+                    <h5>12 products</h5>
+                </div>
+                <div class="catergory">
+                    <img src="./Images/typ-6.png" alt="Cereals">
+                    <h4>Cereals</h4>
+                    <h5>35 products</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products-sec">
+        <h2>Discover Products</h2>
+        <div class="products">
+            <div class="product">
+                <a class="product-img" href="#">
+                    <img src="./Images/prod-1.webp" alt="Purple Onion">
+                </a>
+                <div class="product-content">
+                    <p>Purple Onion</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span class="price">€20.00</span>
+                </div>
+            </div>
+            <div class="product">
+                <a class="product-img" href="#">
+                    <img src="./Images/prod-2.webp" alt="Fresh Strawberry">
+                </a>
+                <div class="product-content">
+                    <p>Fresh Strawberry</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span class="price">€8.00</span>
+                </div>
+            </div>
+            <div class="product">
+                <a class="product-img" href="#">
+                    <img src="./Images/prod-3.webp" alt="Green Capsicum">
+                </a>
+                <div class="product-content">
+                    <p>Green Capsicum</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span class="price">€20.00</span>
+                </div>
+            </div>
+            <div class="product">
+                <a class="product-img" href="#">
+                    <img src="./Images/prod-4.webp" alt="Organic Watermelon">
+                </a>
+                <div class="product-content">
+                    <p>Organic Watermelon</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span class="price">€21.00</span>
+                </div>
+            </div>
+            <div class="product">
+                <a class="product-img" href="#">
+                    <img src="./Images/prod-5.png" alt="Tomato Ketchup">
+                </a>
+                <div class="product-content">
+                    <p>Tomato Ketchup</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span class="price">€30.00</span>
+                </div>
+            </div>
+            <div class="product">
+                <a class="product-img" href="#">
+                    <img src="./Images/prod-6.webp" alt="Butter">
+                </a>
+                <div class="product-content">
+                    <p>Butter</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span class="price">€14.00</span>
+                </div>
+            </div>
+            <div class="product">
+                <a class="product-img" href="#">
+                    <img src="./Images/prod-7.png" alt="Fresh Milk">
+                </a>
+                <div class="product-content">
+                    <p>Fresh Milk</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span class="price">€18.00</span>
+                </div>
+            </div>
+            <div class="product">
+                <a class="product-img" href="#">
+                    <img src="./Images/prod-8.png" alt="Fresh Meat">
+                </a>
+                <div class="product-content">
+                    <p>Fresh Meat</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span class="price">€35.00</span>
+                </div>
+            </div>
+            <div class="product">
+                <a class="product-img" href="#">
+                    <img src="./Images/prod-9.webp" alt="Organic Coconut">
+                </a>
+                <div class="product-content">
+                    <p>Organic Coconut</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span class="price">€15.00</span>
+                </div>
+            </div>
+            <div class="product">
+                <a class="product-img" href="#">
+                    <img src="./Images/prod-10.webp" alt="Yellow Banana">
+                </a>
+                <div class="product-content">
+                    <p>Yellow Banana</p>
+                    <div class="product-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span class="price">€10.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- The Footer section starts here -->
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-column footer-about">
+                <a href="./index.html" class="logo">
+                    <img src="./Images/logo.png" alt="The Website Logo">
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sint, reiciendis sapiente magni ab
+                    nobis.</p>
+            </div>
+            <div class="footer-column footer-categories">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Fresh fruits</a></li>
+                    <li><a href="#">Fresh meat</a></li>
+                    <li><a href="#">Dairy products</a></li>
+                    <li><a href="#">Spices & Seasonings</a></li>
+                    <li><a href="#">Seafood</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-links">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="./about.html">About CartWonders</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="#">News & Updates</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-accounts">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="#">My Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Shipping Details</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 CartWonders Mart. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- The Footer section ends -->
+
+    <script src="./app.js" defer></script>
+</body>
+
+</html>

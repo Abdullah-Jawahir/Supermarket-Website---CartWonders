@@ -1,0 +1,85 @@
+header {
+  position: relative;
+}
+
+#contact-sec {
+  padding: 4em;
+}
+#contact-sec .contact-gallery {
+  display: grid;
+  grid-template: "form-head form-box form-box form-box" "google-map google-map google-map google-map-head";
+  grid-gap: 20px;
+}
+#contact-sec .contact-gallery .gallery-card h2 {
+  font-size: 2.5rem;
+  color: beige;
+}
+#contact-sec .contact-gallery .google-map {
+  grid-area: google-map;
+  height: 400px;
+}
+#contact-sec .contact-gallery .google-map iframe {
+  width: 100%;
+  height: 100%;
+}
+#contact-sec .contact-gallery .google-map-head {
+  grid-area: google-map-head;
+  background-color: #5493bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact-sec .contact-gallery .form-head {
+  grid-area: form-head;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../Images/banner-2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+}
+#contact-sec .contact-gallery .form-box {
+  grid-area: form-box;
+}
+#contact-sec .contact-gallery .form-box form {
+  flex: 0.5;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: space-between;
+}
+#contact-sec .contact-gallery .form-box form .div-form-row {
+  display: inherit;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#contact-sec .contact-gallery .form-box form .div-form-row input, #contact-sec .contact-gallery .form-box form .div-form-row textarea {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 3px;
+}
+#contact-sec .contact-gallery .form-box form .submit-btn {
+  margin-top: 10px;
+  outline: none;
+  border: 2px solid var(--primary-col);
+  border-radius: 3px;
+  padding: 10px 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: var(--primary-col);
+  color: beige;
+  cursor: pointer;
+  transition: 0.35s;
+}
+#contact-sec .contact-gallery .form-box form .submit-btn:hover {
+  border: 2px solid var(--primary-col);
+  background-color: transparent;
+  color: var(--primary-col);
+}

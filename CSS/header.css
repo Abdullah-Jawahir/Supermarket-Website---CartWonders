@@ -1,0 +1,67 @@
+/* Basic styling for header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; 
+    opacity: .8;
+    padding: 10px 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* margin-bottom: 10px; */
+}
+
+/* Style for the logo */
+.logo {
+    flex: 1; 
+}
+
+.logo img {
+    width: 160px; 
+}
+
+/* Style for the navigation menu */
+nav {
+    flex: 2; 
+    text-align: center; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; 
+    margin: 0 20px; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: var(--primary-col);
+}
+
+.active {
+
+    color: var(--primary-col);
+}
+
+/* Style for the icons */
+.icons {
+    flex: 1; 
+    text-align: right; 
+}
+
+.icons i {
+    font-size: 20px; 
+    margin-right: 20px; 
+    color: #333; 
+    transition: color 0.3s ease; 
+    cursor: pointer;
+}
+
+.icons i:hover {
+    color: var(--primary-col); 
+}
